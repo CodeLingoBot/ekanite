@@ -80,7 +80,7 @@ type Index struct {
 // Indexes is a slice of indexes.
 type Indexes []*Index
 
-// Indexes are ordered by decreasing end time.
+// Len: Indexes are ordered by decreasing end time.
 // If two indexes have the same end time, then order by decreasing start time.
 // This means that the first index in the slice covers the latest time range.
 func (i Indexes) Len() int { return len(i) }
